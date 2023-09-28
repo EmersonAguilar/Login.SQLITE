@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.views.PaginaInicio"
+             Title="PaginaInicio">
+    <ScrollView 
+        VerticalOptions="Center">
+        <StackLayout Spacing="5" >
+            <Image Source="foxlogi.png" HeightRequest="150" WidthRequest="150"/>
+            <Label Text="Bienvenidos!" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Fox Company Red" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Grid RowDefinitions="*,*" >
+                <VerticalStackLayout>
+                    <Grid RowDefinitions="*,*" VerticalOptions="Fill" >
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <CarouselView x:Name="carouselView" IndicatorView="indicatorview">
+                                <CarouselView.ItemTemplate>
+                                    <DataTemplate>
+                                        <VerticalStackLayout BackgroundColor="#590000" Padding="10">
+                                            <Image WidthRequest="150" HeightRequest="150" Source="{Binding Imagen}"/>
+                                            <Label FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Title}"/>
+                                            <Label FontSize="Small"  HorizontalTextAlignment="Center" Text="{Binding Description}"/>
+                                        </VerticalStackLayout>
+                                    </DataTemplate>
+                                </CarouselView.ItemTemplate>
+                            </CarouselView>
+                            <IndicatorView x:Name="indicatorview" Margin="5" IndicatorColor="Red" SelectedIndicatorColor="Orange"  HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Grid>
+            </VerticalStackLayout>
+        </Grid>
+            <Label Text="Donde tenemos los mejores productos al mas bajo precio" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

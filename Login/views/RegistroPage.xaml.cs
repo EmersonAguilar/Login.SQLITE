@@ -20,10 +20,10 @@ public partial class RegistroPage : ContentPage
         var item = new RegUserTable()
         {
 
-            UserName = EntryUsername.Text,
-            PassWord = EntryuserPassword.Text,
-            Email = EntryUserEmail.Text,
-            PhoneNumber = EntryUserPhoneNumber.Text
+            UserName = UserName.Text,
+            PassWord = UserPassword.Text,
+            Email = UserEmail.Text,
+            PhoneNumber = UserTelefono.Text
 
         };
 

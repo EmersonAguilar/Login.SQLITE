@@ -33,13 +33,12 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\zorro.png" ForegroundScale="0.60" Color="#790110" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -49,16 +48,42 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\zorro.png" />
+	  <None Remove="Resources\Images\acer_i5.jpg" />
+	  <None Remove="Resources\Images\ace_rycen5.jpg" />
+	  <None Remove="Resources\Images\arroba.png" />
+	  <None Remove="Resources\Images\bloqueado.png" />
+	  <None Remove="Resources\Images\compra.png" />
+	  <None Remove="Resources\Images\dell.png" />
+	  <None Remove="Resources\Images\foxlogi.png" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\llamada.png" />
+	  <None Remove="Resources\Images\usuario.png" />
+	  <None Remove="Resources\Images\usuario1.png" />
+	  <None Remove="Resources\Splash\fox.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiSplashScreen Include="Resources\Splash\fox.png" Color="#590000" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.6" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="views\FormularioCompra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\PaginaInicio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\RegistroPage.xaml">

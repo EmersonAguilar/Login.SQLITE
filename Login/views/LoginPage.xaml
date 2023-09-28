@@ -2,25 +2,44 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Login.views.LoginPage"
-             Title="LoginPage">
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Grid VerticalOptions="CenterAndExpand">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Entry Placeholder="UserName" x:Name="EntryUser" Grid.Row="0"/>
-                    <Entry Placeholder="Password" x:Name="EntryPassword" IsPassword="True" Grid.Row="1"/>
-                    <Button Text="Login" Grid.Row="2" BackgroundColor="Coral" TextColor="Aqua" Clicked="Button_Clicked_1" />
-                    <Button Text="SignUp" Grid.Row="3" Clicked="Button_Clicked"/>
-                </Grid>
-            </StackLayout>
+    <VerticalStackLayout
+     Spacing="25"
+     VerticalOptions="Center">
+        <Image Source="foxlogi.png" HeightRequest="150" WidthRequest="150"/>
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Bienvenidos!" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Login Fox Company Red" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="usuario1.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserName" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="UserName" />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="bloqueado.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserPassword" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password" IsPassword="True" />
+            </Frame>
+        </StackLayout>
+
+        <Button Text="Sing In" Clicked="Button_Clicked_1" WidthRequest="200" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="#590000"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Dont have accunt?" TextColor="#590000"/>
+        </StackLayout>
+        <Button WidthRequest="200" CornerRadius="20" BackgroundColor="White" TextColor="#590000" Text="Sing Up here" FontAttributes="Bold" Clicked="Button_Clicked" />
+    </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
-    
 </ContentPage>

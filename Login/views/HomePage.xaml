@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Login.views.HomePage"
-             Title="HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Logout" Clicked="Button_Clicked" TextColor="Coral"/>
-        </StackLayout>
-    </ContentPage.Content>
-    
-</ContentPage>
+            xmlns:views="clr-namespace:Login.views"
+ xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+    android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <NavigationPage IconImageSource="home.png">
+        <x:Arguments>
+            <views:PaginaInicio Title="Inicio" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="compra.png">
+        <x:Arguments>
+            <views:FormularioCompra/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="usuario.png">
+        <x:Arguments>
+            <views:LoginPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+
+</TabbedPage>

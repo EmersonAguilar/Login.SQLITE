@@ -2,38 +2,64 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Login.views.RegistroPage"
-             Title="RegistroPage">
+             Title="RegistroPage"
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/><!--0 -->
-                        <RowDefinition Height="Auto"/><!--1 -->
-                        <RowDefinition Height="Auto"/><!--2 -->
-                        <RowDefinition Height="Auto"/><!--3 -->
-                        <RowDefinition Height="Auto"/><!--4 -->
-                    </Grid.RowDefinitions>
+    <VerticalStackLayout
+ Spacing="25"
+ VerticalOptions="Center">
+        <Image Source="foxlogi.png" HeightRequest="150" WidthRequest="150"/>
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Bienvenidos!" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Registro Fox Company Red" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
 
-                    <StackLayout Grid.Row="0">
-                        <Entry Placeholder="UserName" FontSize="16" x:Name="EntryUsername"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="1">
-                        <Entry Placeholder="Password" IsPassword="True" FontSize="16" x:Name="EntryuserPassword"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="2">
-                        <Entry Placeholder="Email" FontSize="16" x:Name="EntryUserEmail"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="3">
-                        <Entry Placeholder="PhoneNumber" FontSize="16" x:Name="EntryUserPhoneNumber"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="4">
-                        <Button Text="Register"  HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="#2a0108" BackgroundColor="OrangeRed" Clicked="Button_Clicked" />
-                    </StackLayout>
-                </Grid>
-            </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="usuario1.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserName" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="UserName" />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="bloqueado.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserPassword" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password" IsPassword="True" />
+            </Frame>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="arroba.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserEmail" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Email" />
+            </Frame>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                <Image Source="llamada.png" HeightRequest="30" WidthRequest="30"/>
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="UserTelefono" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Telefono"  />
+            </Frame>
+        </StackLayout>
+
+
+        <Button Text="Registrar" Clicked="Button_Clicked"  WidthRequest="200" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="#590000"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Olvidastes tu contraseña?" TextColor="#590000"/>
+        </StackLayout>
+        <Button Text="Recuperar Contraseña" WidthRequest="200" CornerRadius="20" BackgroundColor="White" TextColor="#590000" FontAttributes="Bold"/>
+
+    </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
-    
+
 </ContentPage>

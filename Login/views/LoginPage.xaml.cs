@@ -20,7 +20,7 @@ public partial class LoginPage : ContentPage
 
         var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.bd");
         var db = new SQLiteConnection(dbpath);
-        var myquery = db.Table<RegUserTable>().Where(u => u.UserName.Equals(EntryUser.Text) && u.PassWord.Equals(EntryPassword.Text)).FirstOrDefault();
+        var myquery = db.Table<RegUserTable>().Where(u => u.UserName.Equals(UserName.Text) && u.PassWord.Equals(UserPassword.Text)).FirstOrDefault();
 
         if (myquery!=null)
         {
