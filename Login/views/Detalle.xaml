@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.views.Detalle"
+             Title="Detalle"
+             BackgroundColor="#3B393D">
+    <<Grid Margin="15" RowDefinitions=".4*,.1*,.4*">
+
+        <Border Grid.RowSpan="2" BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,20,20"/>
+            </Border.StrokeShape>
+            <Grid RowDefinitions=".3*,.17*">
+                <Image 
+                Grid.RowSpan="2"
+                Aspect="AspectFill"
+                 Source="laptop.png" 
+                 WidthRequest="200"
+                HeightRequest="200"
+                VerticalOptions="Center"
+                />
+
+                <Grid ColumnDefinitions="*,*">
+                    <Border 
+                    Grid.Column="1"
+                    Margin="0,25,10,0"
+                    BackgroundColor="{StaticResource Gray600}"
+                    HeightRequest="50"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    WidthRequest="55">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10"/>
+                        </Border.StrokeShape>
+                        <Button 
+                        FontFamily="icon"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        Text="&#xE800;"
+                        TextColor="{StaticResource Gray400}"
+                         BackgroundColor="{StaticResource Gray600}"
+                        VerticalOptions="Center"
+                       
+                        />
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- Apartado de Informacion de libro-->
+
+        <Border Grid.Row="1" Grid.RowSpan="2" Stroke="{StaticResource Gray900}">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="30,30,30,30" />
+            </Border.StrokeShape>
+
+            <Grid 
+                Padding="25" 
+                BackgroundColor="{StaticResource Gray900}" 
+                ColumnDefinitions=".4*,1*,.25*" 
+                RowDefinitions="*,3*,4*">
+
+
+
+                <Label 
+                    Grid.ColumnSpan="2"
+                    FontAttributes="Bold"
+                    FontFamily="Rubik-VariableFont_wght"
+                    FontSize="20"
+                    Text="Laptop game"
+                    TextColor="White"/>
+
+                <Label 
+                    Grid.Column="2"
+                    FontAttributes="Bold"
+                    FontFamily="Rubik-VariableFont_wght"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    Text="$50"
+                    TextColor="#9B3737"
+                    />
+
+                <Label 
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    FontFamily="Rubi"
+                    FontSize="15"
+                    Text="Antoine de Saint-Exupéry"
+                    TextColor="White"
+                    />
+                <HorizontalStackLayout Grid.Row="1" Spacing="10">
+                    <Label 
+                        FontFamily="icon"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="&#xE801;"
+                        TextColor="#F7B548"
+                        VerticalOptions="Center"/>
+                    <Label 
+                        FontAttributes="Bold"
+                        FontFamily="Rubi"
+                        FontSize="25"
+                        Text="4,5"
+                        TextColor="White"
+                        VerticalOptions="Center"/>
+                    <Label 
+                        FontFamily="Rubi"
+                        FontSize="15"
+                        Text="(4,4461)"
+                        TextColor="{StaticResource Gray400}"
+                        VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <!--boton para Comprar libro-->
+                <Button 
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="#9B3737"
+                    FontFamily="icon"
+                    FontSize="20"
+                    Text="&#xE802;"
+                    WidthRequest="70"
+                    HeightRequest="50"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="End"
+                    TextColor="White"/>
+                <Label 
+
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    FontFamily="Rubi"
+                    Text="El Principito, protagonista de la historia, es un niño muy singular que habita en un asteroide lejano, 
+                    y que en su inocencia es portador de una gran sabiduría. Llega a la Tierra luego de un largo recorrido espacial, 
+                    en busca de alguien que le sepa dibujar un cordero"
+                    TextColor="White"
+                    FontSize="15"
+                    />
+            </Grid>
+        </Border>
+        </Grid>
+</ContentPage>
