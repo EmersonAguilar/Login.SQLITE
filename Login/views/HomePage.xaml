@@ -13,7 +13,7 @@
     </NavigationPage>
     <NavigationPage IconImageSource="compra.png">
         <x:Arguments>
-            <views:FormularioCompra/>
+            <views:Producto/>
         </x:Arguments>
     </NavigationPage>
     <NavigationPage IconImageSource="usuario.png">
