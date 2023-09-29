@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.views.CerrarLogiPage"
+             xmlns:tables="clr-namespace:Login.Tables"
+             Shell.NavBarIsVisible="False"
+             Title="CerrarLogiPage"
+             >
+
+
+    <ScrollView VerticalOptions="CenterAndExpand">
+        <StackLayout Spacing="8">
+            <Image Source="foxlogi.png" HeightRequest="150" WidthRequest="150"/>
+            <Label Text="Gracias por usar nuestra app!" FontAttributes="Italic" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Se los desea Fox Company Red" FontAttributes="Italic" FontSize="24" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Button Text="Cerrar Sesión" Clicked="Button_Clicked" WidthRequest="200" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="#590000"/>
+        </StackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
