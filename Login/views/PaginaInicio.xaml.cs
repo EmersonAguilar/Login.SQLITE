@@ -20,4 +20,5 @@ public partial class PaginaInicio : ContentPage
         carouselView.ItemsSource = items;
 
     }
+
 }

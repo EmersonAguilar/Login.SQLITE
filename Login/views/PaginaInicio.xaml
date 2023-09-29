@@ -7,8 +7,8 @@
         VerticalOptions="Center">
         <StackLayout Spacing="5" >
             <Image Source="foxlogi.png" HeightRequest="150" WidthRequest="150"/>
-            <Label Text="Bienvenidos!" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
-            <Label Text="Fox Company Red" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Bienvenidos!" FontAttributes="Italic" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+            <Label Text="Fox Company Red" FontAttributes="None"  FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
             <Grid RowDefinitions="*,*" >
                 <VerticalStackLayout>
                     <Grid RowDefinitions="*,*" VerticalOptions="Fill" >
