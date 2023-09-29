@@ -18,8 +18,8 @@
                                     <DataTemplate>
                                         <VerticalStackLayout BackgroundColor="#590000" Padding="10">
                                             <Image WidthRequest="150" HeightRequest="150" Source="{Binding Imagen}"/>
-                                            <Label FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Title}"/>
-                                            <Label FontSize="Small"  HorizontalTextAlignment="Center" Text="{Binding Description}"/>
+                                            <Label FontSize="Medium" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Title}"/>
+                                            <Label FontSize="Small" TextColor="White"  HorizontalTextAlignment="Center" Text="{Binding Description}"/>
                                         </VerticalStackLayout>
                                     </DataTemplate>
                                 </CarouselView.ItemTemplate>
