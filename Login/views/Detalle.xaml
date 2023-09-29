@@ -4,7 +4,7 @@
              x:Class="Login.views.Detalle"
              Title="Detalle"
              BackgroundColor="#3B393D">
-    <<Grid Margin="15" RowDefinitions=".4*,.1*,.4*">
+    <Grid Margin="15" RowDefinitions=".4*,.1*,.4*">
 
         <Border Grid.RowSpan="2" BackgroundColor="White">
             <Border.StrokeShape>
