@@ -16,11 +16,13 @@
                     <VerticalStackLayout Grid.Row="0"
                                          Grid.Column="0"
                                          Spacing="10">
-                        <Label Text="Best Offer"
+                        <Label Text="Laptop Gamer"
                                FontSize="25"
                                FontAttributes="Bold"
-                               VerticalOptions="Center"/>
-                        <Label Text="Grab this amazing offer before if expires"/>
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Label Text="Grab this amazing offer before if expires"
+                               TextColor="White"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
@@ -31,10 +33,159 @@
                             BackgroundColor="#9B3737"
                             HorizontalOptions="Center"
                             Padding="50,0"
-                            Clicked="Button_Clicked"/>
+                            Clicked="Button_Clicked"
+                            />
                     <Image Grid.RowSpan="2"
                            Grid.Column="1"
                            Source="laptop.png" 
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+                </Grid>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#670010"
+                    VerticalOptions="Start"
+                    Padding="5"
+                    Margin="1">
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*,AUTO">
+                    <VerticalStackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Spacing="10">
+                        <Label Text="Laptop Gamer"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Label Text="Grab this amazing offer before if expires"
+                               TextColor="White"/>
+                    </VerticalStackLayout>
+                    <Button Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Get it not"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="22"
+                            BackgroundColor="#9B3737"
+                            HorizontalOptions="Center"
+                            Padding="50,0"
+                           
+                            />
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="1"
+                           Source="teclado.png" 
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+                </Grid>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#670010"
+                    VerticalOptions="Start"
+                    Padding="5"
+                    Margin="1">
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*,AUTO">
+                    <VerticalStackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Spacing="10">
+                        <Label Text="Laptop Gamer"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Label Text="Grab this amazing offer before if expires"
+                               TextColor="White"/>
+                    </VerticalStackLayout>
+                    <Button Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Get it not"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="22"
+                            BackgroundColor="#9B3737"
+                            HorizontalOptions="Center"
+                            Padding="50,0"
+                            
+                            />
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="1"
+                           Source="rtx.png" 
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+                </Grid>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#670010"
+                    VerticalOptions="Start"
+                    Padding="5"
+                    Margin="1">
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*,AUTO">
+                    <VerticalStackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Spacing="10">
+                        <Label Text="Laptop Gamer"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Label Text="Grab this amazing offer before if expires"
+                               TextColor="White"/>
+                    </VerticalStackLayout>
+                    <Button Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Get it not"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="22"
+                            BackgroundColor="#9B3737"
+                            HorizontalOptions="Center"
+                            Padding="50,0"
+                            
+                            />
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="1"
+                           Source="micro.png" 
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+                </Grid>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#670010"
+                    VerticalOptions="Start"
+                    Padding="5"
+                    Margin="1">
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*,AUTO">
+                    <VerticalStackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Spacing="10">
+                        <Label Text="Laptop Gamer"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Label Text="Grab this amazing offer before if expires"
+                               TextColor="White"/>
+                    </VerticalStackLayout>
+                    <Button Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Get it not"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="22"
+                            BackgroundColor="#9B3737"
+                            HorizontalOptions="Center"
+                            Padding="50,0"
+                            
+                            />
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="1"
+                           Source="audifonos.png" 
                            HeightRequest="150"
                            WidthRequest="150"/>
                 </Grid>

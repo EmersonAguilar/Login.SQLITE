@@ -49,15 +49,21 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\zorro.png" />
+	  <None Remove="Resources\Fonts\fontello.ttf" />
 	  <None Remove="Resources\Images\acer_i5.jpg" />
 	  <None Remove="Resources\Images\ace_rycen5.jpg" />
 	  <None Remove="Resources\Images\arroba.png" />
+	  <None Remove="Resources\Images\audifonos.png" />
 	  <None Remove="Resources\Images\bloqueado.png" />
 	  <None Remove="Resources\Images\compra.png" />
 	  <None Remove="Resources\Images\dell.png" />
 	  <None Remove="Resources\Images\foxlogi.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\laptop.png" />
 	  <None Remove="Resources\Images\llamada.png" />
+	  <None Remove="Resources\Images\micro.png" />
+	  <None Remove="Resources\Images\rtx.png" />
+	  <None Remove="Resources\Images\teclado.png" />
 	  <None Remove="Resources\Images\usuario.png" />
 	  <None Remove="Resources\Images\usuario1.png" />
 	  <None Remove="Resources\Splash\fox.png" />
