@@ -51,7 +51,7 @@
                         <Entry x:Name="txtEmail" FontSize="15"/>
                     </StackLayout>
 
-                    <Button Grid.Row="6" x:Name="btnConfirmarPago" Text="Comfirmar Pago" TextColor="White" HeightRequest="40" BackgroundColor="#2FB96E" HorizontalOptions="FillAndExpand" />
+                    <Button Grid.Row="6" x:Name="btnConfirmarPago" Text="Comfirmar Pago" TextColor="White" HeightRequest="40" BackgroundColor="#670010" HorizontalOptions="FillAndExpand" />
 
                 </Grid>
             </Frame>
