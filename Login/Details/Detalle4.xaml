@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Login.views.Detalle"
+             x:Class="Login.Details.Detalle4"
              Title="Detalle"
              BackgroundColor="#3B393D">
     <Grid Margin="15" RowDefinitions=".4*,.1*,.4*">
@@ -14,7 +14,7 @@
                 <Image 
                 Grid.RowSpan="2"
                 Aspect="AspectFill"
-                 Source="laptop.png" 
+                 Source="audifonos.png" 
                  WidthRequest="200"
                 HeightRequest="200"
                 VerticalOptions="Center"
@@ -67,7 +67,7 @@
                     FontAttributes="Bold"
                     FontFamily="Rubik-VariableFont_wght"
                     FontSize="20"
-                    Text="Laptop game"
+                    Text="Audifonos gamers"
                     TextColor="White"/>
 
                 <Label 
@@ -76,7 +76,7 @@
                     FontFamily="Rubik-VariableFont_wght"
                     FontSize="30"
                     HorizontalTextAlignment="Center"
-                    Text="$350"
+                    Text="$200"
                     TextColor="#9B3737"
                     />
 
@@ -128,11 +128,11 @@
                     Grid.Row="2"
                     Grid.ColumnSpan="3"
                     FontFamily="Rubi"
-                    Text="laptop gamer de 12Th generacion con rtx 16 de ram disco duro 1t"
+                    Text="Audifonos gamers con un buen sonido, bajo y calcelacion de ruido"
                     TextColor="White"
                     FontSize="15"
                     />
             </Grid>
         </Border>
-        </Grid>
+    </Grid>
 </ContentPage>

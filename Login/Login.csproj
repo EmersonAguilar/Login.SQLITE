@@ -80,6 +80,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Details\Detalle1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Details\Detalle2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Details\Detalle3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Details\Detalle4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="views\CerrarLogiPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -21,12 +21,13 @@
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White"/>
-                        <Label Text="Grab this amazing offer before if expires"
-                               TextColor="White"/>
+                        <Label Text="$350"
+                               TextColor="White"
+                               FontSize="20"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
-                            Text="Get it not"
+                            Text="Detalle"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="22"
@@ -58,19 +59,20 @@
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White"/>
-                        <Label Text="Grab this amazing offer before if expires"
-                               TextColor="White"/>
+                        <Label Text="$75"
+                               TextColor="White"
+                               FontSize="20"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
-                            Text="Get it not"
+                            Text="Detalle"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="22"
                             BackgroundColor="#9B3737"
                             HorizontalOptions="Center"
                             Padding="50,0"
-                           
+                           Clicked="Button_Clicked_1"
                             />
                     <Image Grid.RowSpan="2"
                            Grid.Column="1"
@@ -95,19 +97,20 @@
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White"/>
-                        <Label Text="Grab this amazing offer before if expires"
-                               TextColor="White"/>
+                        <Label Text="$400"
+                               TextColor="White"
+                               FontSize="20"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
-                            Text="Get it not"
+                            Text="Detalle"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="22"
                             BackgroundColor="#9B3737"
                             HorizontalOptions="Center"
                             Padding="50,0"
-                            
+                            Clicked="Button_Clicked_2"
                             />
                     <Image Grid.RowSpan="2"
                            Grid.Column="1"
@@ -132,19 +135,20 @@
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White"/>
-                        <Label Text="Grab this amazing offer before if expires"
-                               TextColor="White"/>
+                        <Label Text="$50"
+                               TextColor="White"
+                               FontSize="20"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
-                            Text="Get it not"
+                            Text="Detalle"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="22"
                             BackgroundColor="#9B3737"
                             HorizontalOptions="Center"
                             Padding="50,0"
-                            
+                            Clicked="Button_Clicked_3"
                             />
                     <Image Grid.RowSpan="2"
                            Grid.Column="1"
@@ -169,19 +173,20 @@
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White"/>
-                        <Label Text="Grab this amazing offer before if expires"
-                               TextColor="White"/>
+                        <Label Text="$200"
+                               TextColor="White"
+                               FontSize="20"/>
                     </VerticalStackLayout>
                     <Button Grid.Row="1"
                             Grid.Column="0"
-                            Text="Get it not"
+                            Text="Detalle"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="22"
                             BackgroundColor="#9B3737"
                             HorizontalOptions="Center"
                             Padding="50,0"
-                            
+                            Clicked="Button_Clicked_4"
                             />
                     <Image Grid.RowSpan="2"
                            Grid.Column="1"
