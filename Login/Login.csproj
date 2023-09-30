@@ -62,6 +62,7 @@
 	  <None Remove="Resources\Images\laptop.png" />
 	  <None Remove="Resources\Images\llamada.png" />
 	  <None Remove="Resources\Images\micro.png" />
+	  <None Remove="Resources\Images\pago.png" />
 	  <None Remove="Resources\Images\rtx.png" />
 	  <None Remove="Resources\Images\teclado.png" />
 	  <None Remove="Resources\Images\usuario.png" />
@@ -93,6 +94,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\CerrarLogiPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\FormularioCompra.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\HomePage.xaml">

@@ -122,7 +122,8 @@
                     HeightRequest="50"
                     HorizontalOptions="EndAndExpand"
                     VerticalOptions="End"
-                    TextColor="White"/>
+                    TextColor="White"
+                    Clicked="Button_Clicked"/>
                 <Label 
 
                     Grid.Row="2"
